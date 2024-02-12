@@ -1,0 +1,81 @@
+<style>
+    .filters{
+        text-align: center;
+        color: black;
+    }
+    .filters:hover{
+        opacity: 1;
+        color:  blue;
+        cursor: pointer;  
+
+    }
+    .filter{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 7px;
+        box-shadow: 1px 1px 2px rgb(118, 106, 106);
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100% !important;
+        align-items: center;
+    }
+    .toggles{
+        border: 1px solid gray;
+        padding: 0.7rem;
+        border-radius: 8px;
+    }
+</style>
+<body>
+
+    <div class="filter">
+      
+    <a href="/trending" class="filters">
+        <div><i class="fa-solid fa-fire"></i></div>
+        <div>Trending</div>
+    </a>
+    <a href="/rooms" class="filters">
+        <div><i class="fa-solid fa-bed"></i></div>
+        <div>Rooms</div>
+    </a>
+    <a href="/cities" class="filters">
+        <div><i class="fa-solid fa-mountain-city"></i></div>
+        <div>Cities</div>
+    </a>
+    <a href="/mountain" class="filters">
+        <div><i class="fa-solid fa-mountain-sun"></i></div>
+        <div>Mountain</div>
+    </a>
+    <a href="/pool" class="filters">
+        <div><i class="fa-solid fa-person-swimming"></i></div>
+        <div>Pool</div>
+    </a>
+    <a href="/castels" class="filters">
+        <div><i class="fa-brands fa-fort-awesome"></i></div>
+        <div>Castels</div>
+    </a>
+    <a href="/farms" class="filters">
+        <div><i class="fa-solid fa-cow"></i></div>
+        <div>Farms</div>
+    </a>
+    <a href="/camping" class="filters">
+        <div><i class="fa-solid fa-tents"></i></div>
+        <div>Camping</div>
+    </a>
+    <a href="/villa" class="filters">
+        <div><i class="fa-solid fa-building"></i></div>
+        <div>Villa</div>
+    </a>
+
+        <div class="toggles">
+           <div class="form-check form-switch">
+             <input class="form-check-input toggle" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+             <label class="form-check-label" for="flexSwitchCheckDefault">After tax</label>
+            </div> 
+        </div>
+       
+    </div>

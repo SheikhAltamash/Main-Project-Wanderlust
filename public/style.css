@@ -1,0 +1,131 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.navbar {
+  background: #fff1f1;
+}
+.container {
+  flex: 1;
+}
+/*Footer*/
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.nav-link {
+  color: #222222 !important;
+}
+.f-info-link a {
+  text-decoration: none;
+  color: #222222;
+  margin-left: 1rem;
+}
+.f-info-link a:hover {
+  color: #222222;
+  text-decoration: underline;
+}
+.f-info-link,
+.f-info-social {
+  width: 100%;
+}
+.f-info-social i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+.f-info {
+  padding-top: 1rem;
+  text-align: center;
+  height: 8rem;
+  background: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+/* cards */
+.card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  height: 300px;
+
+  object-fit: cover !important;
+}
+p {
+  font-size: 1.2rem;
+  font-weight: 400 !important;
+}
+.listing-link {
+  text-decoration: none !important;
+  color: black;
+}
+.card-text p {
+  font-weight: 400 !important;
+}
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background: white;
+}
+.show {
+  height: 40vh;
+}
+.row-show {
+  margin-left: -10rem !important;
+}
+.check {
+  display: none;
+}
+.show-card {
+  border: 1px solid rgb(251, 174, 174) !important;
+  margin-left: 5%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(251, 174, 174);
+}
+.success {
+  height: 100px !important;
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 50vh;
+    height: auto !important;
+  }
+  .card {
+    margin-left: 11%;
+  }
+  .row-show {
+    margin-left: 1% !important;
+  }
+  .card-body{
+    font-size: 0.6rem !important;
+  }
+  .rating{
+height: 20px !important;
+width: 30px !important;
+  }
+  
+
+}
+
+.map{
+    display: flex;
+  justify-content: center;
+}
+
+#map {
+    height: 400px;
+    width: 500px;
+     
+    }
+    a{
+      text-decoration: none !important;
+    }

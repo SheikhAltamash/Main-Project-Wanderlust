@@ -1,0 +1,28 @@
+<% layout("/layouts/boilerplate.ejs")%>
+<%-include("includes/allListing.ejs")%>
+
+    <div class="row row-col-lg-12 row-col-md-2 row-col-sm-2">
+    <%for(list of allList){%>
+  
+       <div class="card" style="width: 20rem;">
+         <a href="/listing/<%=list._id%>" class="listing-link row row-col-lg-3 row-col-md-2 row-col-sm-1" >
+        <img src="<%=list.image.url%>" class="card-img-top" alt=""> 
+        <div class="card-img-overlay"></div>
+            <div class="card-body">
+                <p class="card-text"><b><%=list.title%></b>
+                <br>&#8377; <%=list.price.toLocaleString("en-IN")%> /night
+                <i class="togle-i" style="display: none;">&nbsp;&nbsp;+18% GST</i>
+            </p>
+
+             </div>
+             </a>
+        </div>
+         
+    <%}%>
+
+    <%if(!allList.length) {%>
+        <h3 style="color: brown;"> Listing Not Found !!!</h3>
+        <% } %>
+    </div>
+    <script src="./js/taxSwitch.js"></script>
+</body>
