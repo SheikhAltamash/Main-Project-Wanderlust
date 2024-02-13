@@ -80,7 +80,7 @@ p {
   height: 40vh;
 }
 .row-show {
-  margin-left: -10rem !important;
+  margin-left: -10rem ;
 }
 .check {
   display: none;
@@ -94,27 +94,7 @@ p {
 .success {
   height: 100px !important;
 }
-@media (max-width: 768px) {
-  .navbar {
-    width: 50vh;
-    height: auto !important;
-  }
-  .card {
-    margin-left: 11%;
-  }
-  .row-show {
-    margin-left: 1% !important;
-  }
-  .card-body{
-    font-size: 0.6rem !important;
-  }
-  .rating{
-height: 20px !important;
-width: 30px !important;
-  }
-  
 
-}
 
 .map{
     display: flex;

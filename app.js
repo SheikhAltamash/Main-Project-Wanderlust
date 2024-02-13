@@ -6,7 +6,8 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-const mongooseUrl = process.env.MONGO_URL;
+// const mongooseUrl = process.env.MONGO_URL;
+const mongooseUrl = "mongodb://127.0.0.1:27017/wanderlust";
 const port = 8080;
 const path = require("path");
 const methodoverride = require("method-override");

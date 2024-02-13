@@ -1,21 +1,46 @@
 <%layout("./layouts/boilerplate")%>
-<h1 class="col-8 offset-2 mt-4 mb-4">Sign Up on Wanderlust</h1>
-<div class="row mt-6">
-    <div class="col-8 offset-2">
-        <form action="/signup" method="post" class="needs-validation" novalidate>
-               <div class="mb-4 mt-4">
-                <label for="username">Username</label><br>
-                <input required type="text" class="form-control"name="username" id="username">
-                    <div class="invalid-feedback"> Enter a Username</div></div><br>
-                  <div class="mb-4 ">
-                <label for="username">Email</label><br>
-                <input required type="text" class="form-control"name="email" id="username">
-               <div class="invalid-feedback"> Enter a Email</div></div><br>
-                  <div class="mb-5">
-                <label for="username">Password</label><br>
-                <input required type="password" class="form-control"name="password" id="username">
-                <div class="invalid-feedback"> Enter a Strong Password</div></div>
-                  <button  class="btn btn btn-outline-success">Signup</button>
-        </form><br><br>
-        </div>
+<h1 class="col-8 offset-2 mt-4 mb-4 card-text-login">Sign Up on Wanderlust</h1>
+<div class="row mt-6 login-div">
+  <div class="col-8 offset-2">
+    <form action="/signup" method="post" class="needs-validation" novalidate>
+      <div class="mb-4 mt-4">
+        <label for="username" class="card-text">Username</label><br />
+        <input
+          required
+          type="text"
+          class="form-control"
+          name="username"
+          id="username"
+        />
+        <div class="invalid-feedback">Enter a Username</div>
+      </div>
+      <br />
+      <div class="mb-4">
+        <label for="username" class="card-text">Email</label><br />
+      
+        <input
+          required
+          type="text"
+          class="form-control"
+          name="email"
+          id="username"
+        />
+        <div class="invalid-feedback">Enter a Email</div>
+      </div>
+      <br />
+      <div class="mb-5">
+        <label for="username" class="card-text">Password</label><br />
+        <input
+          required
+          type="password"
+          class="form-control"
+          name="password"
+          id="username"
+        />
+        <div class="invalid-feedback">Enter a Strong Password</div>
+      </div>
+      <button class="btn btn btn-outline-success">Signup</button>
+    </form>
+    <br /><br />
+  </div>
 </div>

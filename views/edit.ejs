@@ -1,24 +1,24 @@
 <% layout("/layouts/boilerplate.ejs")%>
-<body><br><br><h1>Editing</h1><br>
+<body><br><br><h1 class="card-text-login">Editing</h1><br>
     
-        <form action="/listing/<%=list._id%>?_method=PATCH" method="post" id="myForm" novalidate class="needs-validation" enctype="multipart/form-data">
-            <div class="row">
+        <form action="/listing/<%=list._id%>?_method=PATCH" method="post" id="myForm" novalidate class="needs-validation" enctype="multipart/form-data" class="form-edit-phone">
+            <div class="row main-show-phone">
                 <div class="col-8 offset-2">
-            <div class="mb-3">
+            <div class="mb-3 card-text">
                 <label for="title">Title</label>
-                <input required type="text" class="form-control"name="Listing[title]" value="<%=list.title%>"><br><br>
+                <input required type="text" class="form-control new-input"name="Listing[title]" value="<%=list.title%>"><br><br>
                   <div class="invalid-feedback">Please Enter a Title</div></div>
-            <div class="mb-3">
+            <div class="mb-3 card-text">
                 <label for="descripition" class="form-label">Descripition</label>
-                <textarea required type="text"class="form-control" name="Listing[description]" ><%=list.description%></textarea>
+                <textarea required type="text"class="form-control card-text" name="Listing[description]" ><%=list.description%></textarea>
               <div class="invalid-feedback">Please Enter a Description</div></div><br>
-            <div class="imgg col-8"><img src="<%=list.image.url%>" alt=""></div>
-              <div class="mb-3"> 
+            <div class="imgg col-8"><img src="<%=list.image.url%>" alt="" class="img-edit-phone"></div>
+              <div class="mb-3 "> 
                <label for="descripition" class="form-label">Image</label>
                <input required type="file"class="form-control" name="Listing[image]">
              
             </div><br>
-            <div class="row">
+            <div class="row card-text">
                     <div class="mb-3 col-4">
                         <label for="location" class="form-label">Category</label>
                         <select class="form-select" aria-label="Default select example" name="Listing[category]">
@@ -37,18 +37,18 @@
                         </select>
                         <div class="invalid-feedback">Select Category</div>
                     </div><br>
-                    <div class="mb-3 col-md-8">
+                    <div class="mb-3 col-md-8 card-text">
                         <label for="location" class="form-label">Location</label>
                         <input type="text" name="Listing[location]" class="form-control" placeholder="Maharashtra, Nagpur" required value="<%=list.location%>">
                         <div class="invalid-feedback">Location should be valid</div>
                     </div><br>
                 </div>
                 <div class="row">
-            <div class="mb-3 col-md-4">
+            <div class="mb-3 col-md-4 card-text">
                 <label for="descripition" class="form-label">Price</label>
                 <input required type="number" class="form-control"name="Listing[price]" value="<%=list.price%>">
               <div class="invalid-feedback">Enter valid price</div></div><br>
-            <div class="mb-3 col-md-8">
+            <div class="mb-3 col-md-8 card-text"  >
                 <label for="descripition" class="form-label">Country</label>
                 <input  required type="text" class="form-control" name="Listing[country]" value="<%=list.country%>">
               <div class="invalid-feedback">Enter valid country name</div></div><br>

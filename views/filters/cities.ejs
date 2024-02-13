@@ -1,11 +1,15 @@
 <% layout("/layouts/boilerplate.ejs")%>
 <%-include("../includes/allListing.ejs")%>
-
-    <div class="row row-col-lg-12 row-col-md-2 row-col-sm-2">
+<style>
+    .ci{
+        color: blue !important;
+    }
+</style>
+    <div class="row row-col-lg-12 row-col-md-2 row-col-sm-2 allistings">
     <%for(list of allList){%>
     <%if(list.category==="cities"){%>
-       <div class="card" style="width: 20rem;">
-         <a href="/listing/<%=list._id%>" class="listing-link row row-col-lg-3 row-col-md-2 row-col-sm-1" >
+       <div class="card phone-card" style="width: 20rem;">
+         <a href="/listing/<%=list._id%>" class="a-phone listing-link row row-col-lg-3 row-col-md-2 row-col-sm-1" >
         <img src="<%=list.image.url%>" class="card-img-top" alt=""> 
         <div class="card-img-overlay"></div>
             <div class="card-body">

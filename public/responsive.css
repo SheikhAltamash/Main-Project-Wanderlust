@@ -1,0 +1,180 @@
+@media screen and (max-width: 900px) {
+  body {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  /* NAVBAR */
+  .fa-compass {
+    font-size: 1rem !important;
+  }
+  .navbar {
+    width: 100% !important;
+    height: fit-content !important;
+    height: 3rem;
+    max-height: 12rem !important;
+    font-size: 0.7rem !important;
+    border-radius: 10px;
+  }
+  .computer-visible-serch {
+    display: none !important;
+  }
+  .phoneHr {
+    display: flex !important;
+    margin-top: -0.4rem !important;
+    height: 1.5px !important;
+  }
+  .phone {
+    margin-top: -0.4rem !important;
+  }
+  .navbar-toggler-icon {
+    font-size: 0.8rem !important;
+  }
+  .navbar-toggler {
+    position: relative !important;
+    left: 1%;
+  }
+
+  .phone-visible-search {
+    display: inline !important;
+    font-size: 0.7rem !important;
+    margin-top: 2px !important;
+  }
+  .phone-visible-search .input-group input,
+  button {
+    position: relative !important;
+    right: 7%;
+    font-size: 0.7rem !important;
+    height: 2rem !important;
+  }
+
+  /* FILTERS */
+  .filter {
+    font-size: 0.6rem;
+    padding: 5px !important;
+  }
+  .not {
+    display: none !important;
+  }
+
+  /*  all LISTINGS */
+  .allistings {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .phone-card img {
+    width: 250px !important;
+    height: 260px !important;
+    background: white !important;
+    margin: auto !important;
+    border-radius: 20px !important ;
+  }
+  .phone-card {
+    margin-left: 0% !important;
+    width: 400px !important;
+    margin: auto !important;
+    margin-bottom: 2rem !important;
+  }
+  .phone-card .card-body p {
+    font-size: 0.8rem !important;
+    margin-left: 2.8rem !important;
+  }
+  .a-phone {
+    margin: auto !important;
+    padding: 0% !important;
+    padding-left: 0% !important;
+  }
+
+  /* SHOW */
+  .show-h3 {
+    font-size: 1rem;
+  }
+  .row-show {
+    margin: auto !important;
+
+    display: flex;
+    justify-content: center !important;
+    padding: 0% !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+  .show-phone {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+  .show-card {
+    width: 300px !important;
+    margin: 0 !important;
+    border-radius: 15px !important;
+  }
+  .card-text {
+    font-size: 0.8rem !important;
+  }
+  .map {
+    width: 250px !important;
+    font-size: 0.5rem !important;
+    margin: auto !important;
+  }
+  .review-show {
+    width: 300px !important;
+    margin: 0 !important;
+    margin: auto !important;
+  }
+  .show-button {
+    margin: auto !important;
+  }
+  .star input {
+    background: #000;
+    width: 50px !important;
+  }
+  .show-delete {
+    margin-left: 2rem !important;
+  }
+  .review-show {
+    width: 300px !important;
+  }
+
+  /* LOGIN */
+  .card-text-login {
+    font-size: 1rem !important;
+  }
+  .login-div input {
+    height: 1.5rem !important;
+    width: 100% !important;
+  }
+  .login-div {
+    display: flex;
+   
+  }
+  .f-info{
+   height: 70px !important;
+    font-size: 0.7rem !important;
+    padding-bottom: 4rem !important;
+  }
+  .f-info i{
+    color: blue;
+    text-shadow: 1px 1px 1px white;
+  }
+ .new-input{
+       height: 1.5rem !important;
+    width: 100% !important;
+ }
+ .card-text input{
+     height: 1.5rem !important;
+    width: 100% !important;
+ }
+
+.main-show-phone{
+    padding-bottom: 4rem !important;
+}
+.img-edit-phone{
+    height: 150px !important;
+    width: 200px !important;
+}
+
+.res{
+    display: none !important;
+}
+}
