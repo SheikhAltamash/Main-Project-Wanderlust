@@ -23,8 +23,10 @@ Welcome to the Accommodation Service Platform! This web application provides a s
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/try/download/community)
-
+- [MongoDB Atlas](https://www.mongodb.com/try/download/community)
+- [Express.js](https://www.npmjs.com/package/express)
+- [Cloudinary](https://cloudinary.com)
+- [Maptiler](https://www.maptiler.com/)
 ### Setup
 
 1. **Clone the repository:**
@@ -51,9 +53,11 @@ Welcome to the Accommodation Service Platform! This web application provides a s
 
 4. **Start the application:**
 
-     node app.js
+     ```bash
+    node app.js
+    ```
 
-    The app should now be running on `http://localhost:3000`.
+    The app should now be running on `http://localhost:8080`.
 
 ## Usage
 
