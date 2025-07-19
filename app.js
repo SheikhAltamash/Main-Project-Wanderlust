@@ -23,17 +23,6 @@ const wrapasync = require("./utils/wrapasync.js");
 const userRouter = require("./routes/user.js");
 const filterRouter = require("./routes/filter.js");
 
-
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-app.use(express.urlencoded({ extended: true }));
-app.use(methodoverride('_method'));
-app.engine("ejs", ejsMate);
-app.use(express.static(path.join(__dirname, '/public')));
-app.use(cookie());
-
-
-
 if (!mongooseUrl) {
   console.error("MongoDB connection URL is not provided.");
   process.exit(1);
@@ -69,6 +58,9 @@ app.listen(port, (res, req) => {
 async function main() {
   await mongoose.connect(mongooseUrl,{serverSelectionTimeoutMS: 30000 });
 }
+// async function main(){
+//   await mongoose.connect("mongodb://localhost:27017/wanderlust");
+// }
 main()
   .then((res) => {
     console.log("Connection Sucessfull !");
@@ -76,6 +68,14 @@ main()
   .catch((err) => {
     console.log(err);
   });
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+app.use(express.urlencoded({ extended: true }));
+app.use(methodoverride("_method"));
+app.engine("ejs", ejsMate);
+app.use(express.static(path.join(__dirname, "/public")));
+app.use(cookie());
 
 app.get("/", (req, res, next) => {
   res.redirect("/listing");

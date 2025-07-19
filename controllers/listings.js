@@ -1,5 +1,6 @@
 const { listing } = require("../models/listing.js");
 const { Review } = require("../models/review.js");
+
 module.exports.index = async (req, res) => {
   let allList = await listing.find();
   res.render("index.ejs", { allList });
@@ -10,7 +11,6 @@ module.exports.renderCreateForm = (req, res) => {
 };
 
 module.exports.createNewListing = async (req, res, next) => {
-  
   let url = req.file.path;
   let filename = req.file.filename;
   const newListing = new listing(req.body.Listing);
@@ -70,3 +70,4 @@ module.exports.deleteListing = async (req, res) => {
   req.flash("success", "Listing Deleted !");
   res.redirect("/listing");
 };
+
